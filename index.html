@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Água Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p class="subtitulo">Uso Consciente da Água na Agricultura</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#introducao">Introdução</a>
+            <a href="#problema">O Desafio</a>
+            <a href="#solucao">Soluções</a>
+            <a href="#interativo">Calculadora</a>
+            <a href="#referencias">Referências</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="introducao" class="card">
+            <h2>1. Introdução</h2>
+            <p>A água é um dos recursos mais valiosos para a produção de alimentos e o equilíbrio dos ecossistemas. No agronegócio moderno, produzir mais gastando menos água é o pilar fundamental para garantir a segurança alimentar sem comprometer o meio ambiente.</p>
+        </section>
+
+        <section id="problema" class="card">
+            <h2>2. O Desafio no Campo</h2>
+            <p>A irrigação inadequada e o desperdício hídrico reduzem as reservas dos lençóis freáticos e afetam a qualidade do solo. O grande desafio da agricultura sustentável é manter a alta produtividade protegendo as nascentes e mananciais.</p>
+        </section>
+
+        <section id="solucao" class="card">
+            <h2>3. Práticas Sustentáveis</h2>
+            <ul>
+                <li><strong>Irrigação por Gotejamento:</strong> Aplica água diretamente nas raízes, reduzindo a evaporação em até 90%.</li>
+                <li><strong>Captação de Água da Chuva:</strong> Reservatórios e cisternas para uso nos períodos de estiagem.</li>
+                <li><strong>Sensores de Umidade do Solo:</strong> Monitoramento em tempo real para irrigar apenas quando a lavoura realmente necessita.</li>
+            </ul>
+        </section>
+
+        <section id="interativo" class="card destaque">
+            <h2>4. Simulador de Economia de Água</h2>
+            <p>Descubra quanta água uma propriedade pode economizar ao migrar da irrigação tradicional para o sistema por gotejamento:</p>
+            
+            <div class="form-group">
+                <label for="area">Tamanho da área irrigada (em hectares):</label>
+                <input type="number" id="area" placeholder="Ex: 2" min="0.1" step="0.1">
+            </div>
+
+            <div class="form-group">
+                <label for="frequencia">Dias de irrigação por semana:</label>
+                <input type="number" id="frequencia" placeholder="Ex: 5" min="1" max="7">
+            </div>
+
+            <button onclick="calcularEconomia()">Calcular Economia Estimada</button>
+
+            <div id="resultado" class="resultado-box hidden">
+                <h3>Resultado do Impacto:</h3>
+                <p id="texto-resultado"></p>
+            </div>
+        </section>
+
+        <section id="referencias" class="card">
+            <h2>5. Referências</h2>
+            <p>Conteúdo baseado em diretrizes de sustentabilidade agrícola da EMBRAPA e materiais educativos do Programa Agrinho (Sistema FAEP/SENAR-PR).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido para o <strong>Concurso Agrinho 2026</strong> | Programação Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
